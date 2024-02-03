@@ -26,7 +26,7 @@
 -- GROUP BY county_name
 -- ORDER BY avg_recovered_uncertainty_range DESC;
 
--- -- Variabilidad en el tiempo de los casos confirmados acumulados
+-- Variabilidad en el tiempo de los casos confirmados acumulados
 -- SELECT forecast_date, 
        -- AVG(cumulative_confirmed_q0975 - cumulative_confirmed_q0025) AS avg_daily_confirmed_uncertainty_range
 -- FROM `bigquery-public-data.covid19_public_forecasts.county_28d`
