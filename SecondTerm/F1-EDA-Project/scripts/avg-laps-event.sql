@@ -3,4 +3,4 @@
 SELECT EventName as 'GP Name', AVG(LapNumber) AS 'Average Laps'
 FROM laps 
 GROUP BY EventName 
-ORDER BY 'Average Laps' DESC;
+ORDER BY AVG(LapNumber) DESC;
