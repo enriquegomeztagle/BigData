@@ -1,17 +1,20 @@
 SELECT 
     t.EventName,
     t.DriverNumber,
-    AVG(t.Throttle) AS AvgThrottleUsage,
-    AVG(t.Brake) AS AvgBrakeUsage,
-    AVG(t.Speed) AS AvgSpeed,
-    MAX(t.Speed) AS MaxSpeed,
-    AVG(t.RPM) AS AvgRPM,
-    COUNT(*) AS SampleSize
+    AVG(NULLIF(CAST(t.Throttle AS FLOAT), 0)) AS AvgThrottleUsage,
+    AVG(CASE WHEN t.Brake = 'True' THEN 1.0 ELSE 0 END) AS AvgBrakeUsage,
+    AVG(NULLIF(CAST(t.Speed AS FLOAT), 0)) AS AvgSpeed,
+    MAX(CAST(t.Speed AS FLOAT)) AS MaxSpeed,
+    MIN(NULLIF(CAST(t.Speed AS FLOAT), 0)) AS MinSpeed,
+    STDDEV_POP(CAST(t.Speed AS FLOAT)) AS StdDevSpeed,
+    AVG(CAST(t.RPM AS FLOAT)) AS AvgRPM,
+    MAX(CAST(t.RPM AS FLOAT)) AS MaxRPM,
+    MIN(CAST(t.RPM AS FLOAT)) AS MinRPM,
+    STDDEV_POP(CAST(t.RPM AS FLOAT)) AS StdDevRPM,
+    SUM(CASE WHEN t.DRS = '1' THEN 1 ELSE 0 END) * 100.0 / COUNT(*) AS PercentageDRSActivated
 FROM 
     telemetry t
-WHERE 
-    t.EventName = 'Specific Event Name'  -- Reemplaza con un nombre de evento específico
 GROUP BY 
     t.EventName, t.DriverNumber
 ORDER BY 
-    t.EventName, AvgSpeed DESC;
+    t.EventName ASC, AvgSpeed DESC, t.DriverNumber ASC;
