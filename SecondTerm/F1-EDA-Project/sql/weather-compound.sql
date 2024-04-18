@@ -1,7 +1,7 @@
 /* This query analyzes the performance of tire compounds under varying weather conditions across different GP events,
    computing the average lap times and categorizing weather impacts. Results are exported to 'performance_under_weather_conditions.csv'. */
 
-SELECT 
+/*SELECT
     EventName,
     Compound,
     AVG(AvgLapTime) AS AvgLapTime,
@@ -39,7 +39,7 @@ INTO OUTFILE 'c:\\wamp64\\tmp\\performance_under_weather_conditions.csv'
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n';
-
+*/
 
 SELECT 
     EventName,

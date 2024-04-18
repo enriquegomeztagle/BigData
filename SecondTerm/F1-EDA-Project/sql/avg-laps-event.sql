@@ -1,7 +1,8 @@
 /* This query calculates the average number of laps completed for each Grand Prix (GP) event,
 ordered by the highest average number of laps.*/
 
-/* SELECT 
+/* LOCAL TESTS
+SELECT
     EventName AS `GP Name`,
     AVG(LapNumber) AS `Average Laps`
 FROM 
@@ -16,7 +17,7 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'; */
 
 
-SELECT EventName as 'GP Name', AVG(LapNumber) AS 'Average Laps'
-FROM laps 
-GROUP BY EventName 
+SELECT EventName as `GP Name`, AVG(LapNumber) AS `Average Laps`
+FROM laps
+GROUP BY EventName
 ORDER BY AVG(LapNumber) DESC;

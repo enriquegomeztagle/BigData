@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/SecondTerm/F1-EDA-Project/sql/SCHEMA-OVERVIEW.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SecondTerm/F1-EDA-Project/sql/avg-laps-event.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SecondTerm/F1-EDA-Project/sql/avg-sector-speed.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SecondTerm/F1-EDA-Project/sql/best-time-on-gp.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SecondTerm/F1-EDA-Project/sql/drivers-on-events.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SecondTerm/F1-EDA-Project/sql/event-dates.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SecondTerm/F1-EDA-Project/sql/laps-per-tire-type.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SecondTerm/F1-EDA-Project/sql/most-fast-laps.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SecondTerm/F1-EDA-Project/sql/ovw-driver.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SecondTerm/F1-EDA-Project/sql/perc-completed-laps.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SecondTerm/F1-EDA-Project/sql/telemetry.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SecondTerm/F1-EDA-Project/sql/weather-compound.sql" dialect="MySQL" />
+  </component>
+</project>

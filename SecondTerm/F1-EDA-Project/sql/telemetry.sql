@@ -1,7 +1,7 @@
 /* This query offers a comprehensive telemetry analysis for each driver in each event, 
 including detailed metrics on throttle usage, brake usage, speed, RPM, and DRS activation*/
 
-SELECT 
+/*SELECT
     t.EventName,
     t.DriverNumber,
     AVG(NULLIF(CAST(t.Throttle AS FLOAT), 0)) AS AvgThrottleUsage,
@@ -25,7 +25,7 @@ INTO OUTFILE 'c:\\wamp64\\tmp\\telemetry_analysis.csv'
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n';
-
+*/
 
 SELECT 
     t.EventName,
