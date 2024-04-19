@@ -8,7 +8,6 @@ spark = SparkSession.builder \
 
 # Define SQL Query
 sql_query = """
-
 """
 
 # Execute the SQL query

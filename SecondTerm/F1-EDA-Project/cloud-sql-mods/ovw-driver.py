@@ -1,5 +1,5 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, expr, count, when, avg
+from pyspark.sql.functions import col, expr, count, when, avg, row_number
 from pyspark.sql.window import Window
 
 spark = SparkSession.builder \
@@ -19,7 +19,7 @@ most_used_compound = compounds_usage.withColumn("rank", row_number().over(window
     .filter(col("rank") == 1) \
     .drop("UsageCount", "rank")
 
-driver_stats = spark.table("laps_temp").groupBy("Driver").agg(
+driver_stats = spark.table("laps_temp_updated").groupBy("Driver").agg(
     avg(
         when(col("LapTime").isNotNull(),
              expr("""
