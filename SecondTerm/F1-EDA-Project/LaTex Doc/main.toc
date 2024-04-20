@@ -1,0 +1,57 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{3}{}%
+\contentsline {section}{\numberline {2}Infrastructure / Architecture}{3}{}%
+\contentsline {section}{\numberline {3}Data Analysis with F1 Dataset}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Database Structure Overview}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Query Execution Framework}{6}{}%
+\contentsline {subsection}{\numberline {3.3}Query Analysis and Insights}{6}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Average Number of Laps per Grand Prix}{6}{}%
+\contentsline {paragraph}{Description:}{6}{}%
+\contentsline {paragraph}{Interpretation:}{8}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}Average Speed per Sector}{8}{}%
+\contentsline {paragraph}{Description:}{8}{}%
+\contentsline {paragraph}{Interpretation:}{8}{}%
+\contentsline {subsubsection}{\numberline {3.3.3}Best Lap Times per Grand Prix}{9}{}%
+\contentsline {paragraph}{Description:}{9}{}%
+\contentsline {paragraph}{Interpretation:}{10}{}%
+\contentsline {subsubsection}{\numberline {3.3.4}Density of Number of Drivers in Grand Prix Events}{10}{}%
+\contentsline {paragraph}{Description:}{10}{}%
+\contentsline {paragraph}{Interpretation:}{11}{}%
+\contentsline {subsubsection}{\numberline {3.3.5}Grand Prix Schedule 2023}{12}{}%
+\contentsline {paragraph}{Description:}{12}{}%
+\contentsline {paragraph}{Interpretation:}{13}{}%
+\contentsline {subsubsection}{\numberline {3.3.6}Total Laps by Tire Compound}{13}{}%
+\contentsline {paragraph}{Description:}{13}{}%
+\contentsline {paragraph}{Interpretation:}{14}{}%
+\contentsline {subsubsection}{\numberline {3.3.7}Number of Fastest Laps per Driver}{14}{}%
+\contentsline {paragraph}{Description:}{14}{}%
+\contentsline {paragraph}{Interpretation:}{15}{}%
+\contentsline {subsubsection}{\numberline {3.3.8}Driver Lap Completion Analysis}{15}{}%
+\contentsline {paragraph}{Description:}{15}{}%
+\contentsline {paragraph}{Interpretation:}{17}{}%
+\contentsline {subsubsection}{\numberline {3.3.9}Telemetry Analysis by Driver and Event}{17}{}%
+\contentsline {paragraph}{Description:}{17}{}%
+\contentsline {paragraph}{Interpretation:}{18}{}%
+\contentsline {subsubsection}{\numberline {3.3.10}Correlation between Lap Times by Tire Compound and Weather Conditions}{18}{}%
+\contentsline {paragraph}{Description:}{18}{}%
+\contentsline {paragraph}{Interpretation:}{19}{}%
+\contentsline {subsubsection}{\numberline {3.3.11}Dot Chart Overview by Driver}{20}{}%
+\contentsline {paragraph}{Description:}{20}{}%
+\contentsline {paragraph}{Interpretation:}{21}{}%
+\contentsline {section}{\numberline {4}Challenges Encountered}{21}{}%
+\contentsline {subsection}{\numberline {4.1}Infrastructure-Related Challenges}{21}{}%
+\contentsline {subsection}{\numberline {4.2}Query and Code-Related Challenges}{22}{}%
+\contentsline {subsection}{\numberline {4.3}Data Integrity Challenges}{25}{}%
+\contentsline {section}{\numberline {5}Data Processing Optimizations}{27}{}%
+\contentsline {subsection}{\numberline {5.1}Conversion of Lap Times for Simplified Access}{27}{}%
+\contentsline {section}{\numberline {6}Hive Metastore}{29}{}%
+\contentsline {subsubsection}{\numberline {6.0.1}SQL Connection to the Hive Metastore with the SDK}{29}{}%
+\contentsline {subsubsection}{\numberline {6.0.2}Selecting Database}{29}{}%
+\contentsline {subsubsection}{\numberline {6.0.3}Querying the Table Location}{29}{}%
+\contentsline {subsubsection}{\numberline {6.0.4}Querying Data Format and Location}{29}{}%
+\contentsline {section}{\numberline {7}Conclusions}{30}{}%
+\contentsline {paragraph}{Insights and Impact:}{30}{}%
+\contentsline {paragraph}{Future Directions:}{31}{}%
+\contentsline {paragraph}{Final Thoughts:}{31}{}%
+\contentsline {section}{\numberline {8}Project Repository}{31}{}%
+\contentsline {section}{\numberline {9}References}{31}{}%
