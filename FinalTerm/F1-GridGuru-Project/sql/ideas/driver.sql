@@ -1,14 +1,11 @@
+USE GridGuru;
 SELECT 
     d.forename AS FirstName, 
     d.surname AS LastName,
-    (SELECT c.name 
-     FROM constructors c 
-     JOIN results r ON c.constructorId = r.constructorId 
-     WHERE r.driverId = d.driverId 
-     ORDER BY r.raceId DESC LIMIT 1) AS LastTeam,
-    COUNT(DISTINCT ra.year) AS SeasonsCompeted,
+    c.name AS BestPerformanceTeam,
+    COUNT(DISTINCT ra.year) AS CompetitiveSeasons,
     AVG(ds.points) AS AvgPointsPerSeason,
-    SUM(ds.points) AS TotalPoints,
+    SUM(ds.points) AS TotalCareerPoints,
     SUM(CASE WHEN r.position = 1 THEN 1 ELSE 0 END) AS Wins,
     COUNT(CASE WHEN r.position <= 3 THEN 1 ELSE NULL END) AS Podiums,
     MIN(r.positionOrder) AS BestFinish,
@@ -16,10 +13,12 @@ SELECT
     AVG(r.positionOrder) AS AvgFinishPosition
 FROM driver_standings ds
 JOIN drivers d ON ds.driverId = d.driverId
-JOIN results r ON ds.driverId = d.driverId
-JOIN races ra ON r.raceId = r.raceId
+JOIN results r ON ds.driverId = r.driverId AND ds.raceId = r.raceId
+JOIN races ra ON ra.raceId = r.raceId
+JOIN constructors c ON r.constructorId = c.constructorId
 JOIN status s ON r.statusId = s.statusId
-WHERE ra.year >= YEAR(CURDATE()) - 6
-GROUP BY d.driverId, d.forename, d.surname -- Incluyendo el driverId en el GROUP BY
+WHERE ra.year >= YEAR(CURDATE()) - 5
+GROUP BY d.forename, d.surname, c.name
+HAVING CompetitiveSeasons >= 3
 ORDER BY AvgPointsPerSeason DESC, Wins DESC, Podiums DESC, Retirements ASC, AvgFinishPosition ASC
 LIMIT 5;
