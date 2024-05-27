@@ -1,10 +1,5 @@
-import pandas as pd
-import sqlalchemy
+USE GridGuru;
 
-# Create sql connection
-conn = sqlalchemy.create_engine('mysql+pymysql://root:root@localhost:3306/GridGuru')
-
-query = """
 SELECT s.status          AS Status,
        c.name            AS ConstructorName,
        COUNT(r.statusId) AS CountStatus,
@@ -28,13 +23,7 @@ FROM results r
 GROUP BY s.status, c.name, maxAndMin.MaxCount, maxAndMin.MinCount
 HAVING Category IN ('Max', 'Min', 'Red Bull')
 ORDER BY s.status, Category DESC;
-"""
 
-# Execute query and load into a DataFrame
-df = pd.read_sql_query(query, conn)
-
-# Save results to CSV
-df.to_csv('team-reliability.csv', index=False)
-
-# Close connection
-conn.dispose()
+/* With this query, we can see the number of times each status has been reached by out team. 
+   We can also see the maximum and minimum number of times a status has been reached by any team. 
+   This information helps us to understand the reliability of our team and how it compares to other teams in the competition. */
