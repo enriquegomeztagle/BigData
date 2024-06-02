@@ -42,19 +42,19 @@
 
 \title{F1 EDA - Big Data Final Term Project}
 
-\author{Enrique Ulises Báez Gómez Tagle \\ Mauricio Iván Ascencio Martínez\\ Sara Rocío Miranda Mateos}
+\author{Enrique Ulises Báez Gómez Tagle \\ Sara Rocío Miranda Mateos}
 
 \maketitle
 
-\begin{abstract}
-In this project, we explore the use of big data technologies to analyze the Formula 1 dataset. Our objective is to derive meaningful insights that can inform strategic decisions in the sport.
-\end{abstract}
+% MISSING \begin{abstract}% MISSING 
+
+% MISSING \end{abstract}
 
 \tableofcontents
 \newpage
 
-\section{Introduction}
-This project focuses on leveraging big data technologies to analyze the Formula 1 dataset. By implementing a robust data lakehouse architecture, we aim to perform detailed data analysis and extract insights that can drive data-driven decision-making in the context of Formula 1 racing.
+% MISSING \section{Introduction}% MISSING 
+
 
 \section{Infrastructure / Architecture}
 
@@ -113,71 +113,29 @@ This infrastructure is pivotal to our project, allowing us to effectively utiliz
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{images/arch/AWS-GridGuru-LakeHouseArchitecture.png}
-    \caption{\textbf{Architecture Diagram}}
+    \caption{\textbf{AWS Data LakeHouse Architecture Diagram}}
 \end{figure}
 
-\section{Data Analysis with F1 Dataset}
+% MISSING \section{Data Analysis with F1 Datasets} % MISSING 
 
-\begin{lstlisting}[language=Python]
-# Placeholder for Python code
-\end{lstlisting}
 
-\subsection{Query Analysis and Insights}
 
-\subsubsection{Average Number of Laps per Grand Prix}
-\paragraph{Description:}
-The average number of laps per Grand Prix provides insights into race length and potential strategy implications for teams.
-
-\begin{figure}[H]
-    \centering
-    %\includegraphics[width=0.6\textwidth]{ss-average-laps.png}
-    \caption{Number of Laps GCP Query Result}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    %\includegraphics[width=\textwidth]{average_laps_per_gp_plot.png}
-    \caption{Bar Chart Average Number of Laps per Grand Prix}
-\end{figure}
-
-\paragraph{Interpretation:}
-The bar graph visually represents the average number of laps for each Grand Prix, sorted in descending order. Longer races may indicate a need for different tire strategies or fuel management plans. Conversely, shorter races might lead to more aggressive racing tactics. We can say that Monaco GP is the longest and Belgian GP is the shortest with a difference of around 16 laps.
 
 \section{Challenges Encountered}
-During the development and analysis phases of our project, we encountered several challenges that fell into two main categories: infrastructure-related and query/code-related. Below, we detail these issues and how we addressed them.
-
 \subsection{Infrastructure-Related Challenges}
 \paragraph{Description:}
-Some of the challenges faced were related to the setup and configuration of the AWS services, ensuring efficient data flow between different layers, and maintaining security and compliance standards.
+Initially, our project was set up on Google Cloud Platform (GCP). However, we faced a significant challenge when our GCP credits were exhausted. To continue our work without interruption, we opted to create a simplified version of a Data Lakehouse on AWS. This decision was influenced by the opportunities and services available in AWS, which allowed us to replicate the necessary functionalities we initially had on GCP. We carefully selected AWS services that closely matched those we used on GCP to ensure a smooth transition and maintain the efficiency of our data processing and analysis.
 
-\subsection{Query and Code-Related Challenges}
-\paragraph{Description:}
-Challenges included optimizing queries to handle large datasets efficiently and debugging code to ensure accurate analysis results.
+% MISSING  \section{Conclusions} % MISSING 
 
-\section{Conclusions}
-Through the utilization of big data technologies such as AWS and the implementation of a robust data lakehouse architecture, this project has provided significant insights into the Formula 1 dataset. Our comprehensive analysis spanned multiple aspects of the sport, from individual driver performance and tire strategies to the influence of weather conditions on race dynamics.
-
-\paragraph{Insights and Impact:}
-The queries conducted revealed:
-\begin{itemize}
-    \item Insights into race strategies based on the number of laps per Grand Prix.
-    \item Data-driven decisions for tire management and fuel strategies.
-\end{itemize}
-
-\paragraph{Future Directions:}
-Future work could involve incorporating additional data sources, such as weather data, to enhance the analysis and insights.
-
-\paragraph{Final Thoughts:}
-This project demonstrates the power of big data technologies in sports analytics, providing a framework for future analysis and strategic planning in Formula 1.
 
 \section{Project Repository}
 \url{https://github.com/enriquegomeztagle/BigData/tree/main/FinalTerm/F1-GridGuru-Project}
 
-\section{References}
 \label{sec:references}
 \begin{thebibliography}{9}
-\bibitem{ref1}
-Author, \textit{Title of the paper}, Journal Name, Volume, Year.
+% \bibitem{ref1}
+
 \end{thebibliography}
 
 \end{document}
