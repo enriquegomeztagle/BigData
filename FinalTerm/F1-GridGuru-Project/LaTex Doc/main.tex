@@ -116,7 +116,40 @@ This infrastructure is pivotal to our project, allowing us to effectively utiliz
     \caption{\textbf{AWS Data LakeHouse Architecture Diagram}}
 \end{figure}
 
-% MISSING \section{Data Analysis with F1 Datasets} % MISSING 
+\section{Data Analysis with F1 Dataset}
+
+We employed a dual dataset approach:
+
+\begin{itemize}
+    \item \textbf{Static Dataset:} This dataset contains historical information from past Formula 1 seasons. It includes data on race results, driver standings, lap times, and other relevant metrics.
+    \item \textbf{Dynamic Dataset:} This dataset provides real-time information for the current 2024 season. AWS Lambda is used to ingest this data by making API calls to gather the latest updates, ensuring that our analysis remains current with ongoing events.
+\end{itemize}
+By integrating these datasets into our Data Lakehouse architecture on AWS, we effectively manage both historical and real-time data. The static dataset allows us to analyze trends and patterns over previous seasons, while the dynamic dataset enables us to monitor and react to live data from the current season.
+
+Our analysis aimed to uncover actionable insights that could inform race strategies and enhance the performance of both teams and drivers. We utilized SQL queries on our Amazon EMR cluster to efficiently process and analyze the substantial data volumes. These queries were meticulously crafted to explore hypotheses regarding the relationships between various factors such as weather conditions, track characteristics, and driver performance metrics.
+
+Upon obtaining initial results and drawing preliminary conclusions from these queries, we further refined our analysis by exporting the data to the Curated Layer in Amazon S3. These files were then imported into a dedicated workspace in RStudio for detailed visualization. This additional step allowed us to visually interpret the data more intuitively, facilitating the identification of significant patterns and trends that underpin our strategic recommendations.
+
+\subsection{Database Structure Overview}
+For our exploratory data analysis (EDA), we used a combination of historical and current datasets, structured into several tables with specific focuses. Each table captures unique aspects of the sport, allowing for a comprehensive analysis from multiple angles. Here's a brief guide to some tables:
+
+\begin{itemize}
+    \item \textbf{Circuits}: Contains details about the various circuits used in the races, including location, length, and other relevant information.
+    \item \textbf{Constructor Results}: Records the results achieved by each constructor in different races, including points and status.
+    \item \textbf{Constructor Standings}: Summarizes the standings of constructors throughout the season, capturing their cumulative points and positions.
+    \item \textbf{Constructors}: Lists the constructors participating in a season, along with their basic information and attributes.
+    \item \textbf{Driver Standings}: Details the standings of drivers across the season, showing their cumulative points and positions after each race.
+    \item \textbf{Drivers}: Contains information about the drivers, including personal details, nationality, and career statistics.
+    \item \textbf{Lap Times}: Records the times for each lap completed during race weekends, providing timing and performance data.
+    \item \textbf{Pit Stops}: Details the pit stops made during races, including timing and duration.
+    \item \textbf{Qualifying}: Captures the results of the qualifying sessions, determining the starting grid for the races.
+    \item \textbf{Races}: Provides comprehensive information about each race event, including date, location, and participating drivers and constructors.
+    \item \textbf{Results}: Summarizes the race results for each event, including positions, points, and other performance metrics.
+    \item \textbf{Seasons}: Lists the seasons of the championship, including the year and other relevant details.
+    \item \textbf{Sprint Results}: Contains the results of the sprint qualifying sessions, including grid positions and points awarded.
+    \item \textbf{Status}: Describes the status of drivers in each race, such as whether they finished or the reason for not finishing.
+\end{itemize}
+
 
 
 
