@@ -1,19 +1,8 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Introduction}{2}{}%
-\contentsline {section}{\numberline {2}Infrastructure / Architecture}{2}{}%
-\contentsline {section}{\numberline {3}Data Analysis with F1 Dataset}{4}{}%
-\contentsline {subsection}{\numberline {3.1}Query Analysis and Insights}{4}{}%
-\contentsline {subsubsection}{\numberline {3.1.1}Average Number of Laps per Grand Prix}{4}{}%
-\contentsline {paragraph}{Description:}{4}{}%
-\contentsline {paragraph}{Interpretation:}{4}{}%
-\contentsline {section}{\numberline {4}Challenges Encountered}{5}{}%
-\contentsline {subsection}{\numberline {4.1}Infrastructure-Related Challenges}{5}{}%
-\contentsline {paragraph}{Description:}{5}{}%
-\contentsline {subsection}{\numberline {4.2}Query and Code-Related Challenges}{5}{}%
-\contentsline {paragraph}{Description:}{5}{}%
-\contentsline {section}{\numberline {5}Conclusions}{5}{}%
-\contentsline {paragraph}{Insights and Impact:}{5}{}%
-\contentsline {paragraph}{Future Directions:}{5}{}%
-\contentsline {paragraph}{Final Thoughts:}{5}{}%
-\contentsline {section}{\numberline {6}Project Repository}{6}{}%
-\contentsline {section}{\numberline {7}References}{6}{}%
+\contentsline {section}{\numberline {1}Infrastructure / Architecture}{2}{}%
+\contentsline {section}{\numberline {2}Data Analysis with F1 Dataset}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Database Structure Overview}{5}{}%
+\contentsline {section}{\numberline {3}Challenges Encountered}{6}{}%
+\contentsline {subsection}{\numberline {3.1}Infrastructure-Related Challenges}{6}{}%
+\contentsline {paragraph}{Description:}{6}{}%
+\contentsline {section}{\numberline {4}Project Repository}{6}{}%
