@@ -7,32 +7,26 @@ conn = sqlalchemy.create_engine('mysql+pymysql://root:root@localhost:3306/GridGu
 # Define your SQL query
 query = """
 SELECT 
-    c.circuitId,
-    c.name AS circuit_name,
-    c.location,
-    c.country,
-    COUNT(res.resultId) AS total_incidents
+    q.driverId,
+    CONCAT(d.forename, ' ', d.surname) AS driver_name,
+    AVG(res.position - q.position) AS avg_position_change
 FROM 
-    circuits c
+    qualifying q
 JOIN 
-    races r ON c.circuitId = r.circuitId
+    results res ON q.raceId = res.raceId AND q.driverId = res.driverId
 JOIN 
-    results res ON r.raceId = res.raceId
-JOIN 
-    status s ON res.statusId = s.statusId
-WHERE 
-    s.statusId IN (3, 4)  -- IDs for Accident and Collision
+    drivers d ON q.driverId = d.driverId
 GROUP BY 
-    c.circuitId, c.name, c.location, c.country
+    q.driverId, d.forename, d.surname
 ORDER BY 
-    total_incidents DESC;
+    avg_position_change DESC;
 """
 
 # Execute the query and load into a DataFrame
 df = pd.read_sql_query(query, conn)
 
 # Save results to CSV
-df.to_csv('dangerous-tracks.csv', index=False)
+df.to_csv('quali-vs-race.csv', index=False)
 
 # Close connection
 conn.dispose()
