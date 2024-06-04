@@ -1,0 +1,104 @@
+circuitId,circuit_name,sector,total_accidents
+6,Circuit de Monaco,Sector 1,1314
+6,Circuit de Monaco,Sector 2,959
+7,Circuit Gilles Villeneuve,Sector 1,683
+1,Albert Park Grand Prix Circuit,Sector 1,557
+18,Autódromo José Carlos Pace,Sector 1,526
+7,Circuit Gilles Villeneuve,Sector 2,470
+15,Marina Bay Street Circuit,Sector 1,425
+1,Albert Park Grand Prix Circuit,Sector 2,359
+6,Circuit de Monaco,Sector 3,357
+18,Autódromo José Carlos Pace,Sector 2,325
+4,Circuit de Barcelona-Catalunya,Sector 1,301
+15,Marina Bay Street Circuit,Sector 2,258
+10,Hockenheimring,Sector 1,252
+13,Circuit de Spa-Francorchamps,Sector 1,239
+9,Silverstone Circuit,Sector 1,230
+20,Nürburgring,Sector 1,226
+14,Autodromo Nazionale di Monza,Sector 1,223
+70,Red Bull Ring,Sector 1,210
+1,Albert Park Grand Prix Circuit,Sector 3,204
+7,Circuit Gilles Villeneuve,Sector 3,201
+22,Suzuka Circuit,Sector 1,197
+35,Korean International Circuit,Sector 1,194
+10,Hockenheimring,Sector 2,190
+22,Suzuka Circuit,Sector 2,159
+73,Baku City Circuit,Sector 1,155
+11,Hungaroring,Sector 1,153
+17,Shanghai International Circuit,Sector 1,151
+4,Circuit de Barcelona-Catalunya,Sector 2,146
+25,Autódromo Juan y Oscar Gálvez,Sector 1,144
+13,Circuit de Spa-Francorchamps,Sector 2,140
+14,Autodromo Nazionale di Monza,Sector 2,134
+9,Silverstone Circuit,Sector 2,130
+73,Baku City Circuit,Sector 2,117
+21,Autodromo Enzo e Dino Ferrari,Sector 1,110
+16,Fuji Speedway,Sector 1,107
+35,Korean International Circuit,Sector 2,104
+18,Autódromo José Carlos Pace,Sector 3,99
+20,Nürburgring,Sector 2,98
+19,Indianapolis Motor Speedway,Sector 1,98
+70,Red Bull Ring,Sector 2,96
+2,Sepang International Circuit,Sector 1,95
+12,Valencia Street Circuit,Sector 1,92
+17,Shanghai International Circuit,Sector 2,92
+16,Fuji Speedway,Sector 2,85
+3,Bahrain International Circuit,Sector 1,82
+2,Sepang International Circuit,Sector 2,79
+10,Hockenheimring,Sector 3,78
+24,Yas Marina Circuit,Sector 1,69
+8,Circuit de Nevers Magny-Cours,Sector 1,66
+15,Marina Bay Street Circuit,Sector 3,65
+25,Autódromo Juan y Oscar Gálvez,Sector 2,65
+77,Jeddah Corniche Circuit,Sector 1,64
+22,Suzuka Circuit,Sector 3,63
+71,Sochi Autodrom,Sector 1,62
+69,Circuit of the Americas,Sector 1,61
+12,Valencia Street Circuit,Sector 2,59
+14,Autodromo Nazionale di Monza,Sector 3,58
+24,Yas Marina Circuit,Sector 2,55
+20,Nürburgring,Sector 3,53
+21,Autodromo Enzo e Dino Ferrari,Sector 2,51
+13,Circuit de Spa-Francorchamps,Sector 3,47
+27,Autódromo do Estoril,Sector 1,46
+27,Autódromo do Estoril,Sector 2,46
+32,Autódromo Hermanos Rodríguez,Sector 1,44
+68,Buddh International Circuit,Sector 1,43
+71,Sochi Autodrom,Sector 2,43
+69,Circuit of the Americas,Sector 2,39
+79,Miami International Autodrome,Sector 1,38
+79,Miami International Autodrome,Sector 2,38
+71,Sochi Autodrom,Sector 3,29
+8,Circuit de Nevers Magny-Cours,Sector 2,29
+73,Baku City Circuit,Sector 3,29
+35,Korean International Circuit,Sector 3,27
+32,Autódromo Hermanos Rodríguez,Sector 2,24
+17,Shanghai International Circuit,Sector 3,24
+16,Fuji Speedway,Sector 3,24
+8,Circuit de Nevers Magny-Cours,Sector 3,23
+26,Circuito de Jerez,Sector 1,23
+26,Circuito de Jerez,Sector 2,23
+11,Hungaroring,Sector 2,22
+70,Red Bull Ring,Sector 3,22
+5,Istanbul Park,Sector 1,21
+76,Autodromo Internazionale del Mugello,Sector 1,21
+2,Sepang International Circuit,Sector 3,20
+12,Valencia Street Circuit,Sector 3,20
+68,Buddh International Circuit,Sector 2,20
+3,Bahrain International Circuit,Sector 2,19
+5,Istanbul Park,Sector 2,19
+79,Miami International Autodrome,Sector 3,17
+34,Circuit Paul Ricard,Sector 1,17
+24,Yas Marina Circuit,Sector 3,14
+4,Circuit de Barcelona-Catalunya,Sector 3,13
+21,Autodromo Enzo e Dino Ferrari,Sector 3,9
+27,Autódromo do Estoril,Sector 3,6
+9,Silverstone Circuit,Sector 3,6
+69,Circuit of the Americas,Sector 3,4
+25,Autódromo Juan y Oscar Gálvez,Sector 3,4
+32,Autódromo Hermanos Rodríguez,Sector 3,3
+19,Indianapolis Motor Speedway,Sector 2,3
+68,Buddh International Circuit,Sector 3,2
+3,Bahrain International Circuit,Sector 3,1
+26,Circuito de Jerez,Sector 3,1
+5,Istanbul Park,Sector 3,1

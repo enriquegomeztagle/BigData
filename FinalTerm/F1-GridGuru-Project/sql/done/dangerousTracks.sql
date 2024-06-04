@@ -1,4 +1,3 @@
-CREATE TABLE dangerous_tracks AS
 SELECT 
     c.circuitId,
     c.name AS circuit_name,
