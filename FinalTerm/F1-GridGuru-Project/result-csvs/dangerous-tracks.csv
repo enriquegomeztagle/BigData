@@ -1,0 +1,74 @@
+circuitId,circuit_name,location,country,total_incidents
+6,Circuit de Monaco,Monte-Carlo,Monaco,191
+13,Circuit de Spa-Francorchamps,Spa,Belgium,100
+14,Autodromo Nazionale di Monza,Monza,Italy,92
+7,Circuit Gilles Villeneuve,Montreal,Canada,87
+20,Nürburgring,Nürburg,Germany,86
+9,Silverstone Circuit,Silverstone,UK,81
+18,Autódromo José Carlos Pace,São Paulo,Brazil,80
+1,Albert Park Grand Prix Circuit,Melbourne,Australia,69
+19,Indianapolis Motor Speedway,Indianapolis,USA,69
+70,Red Bull Ring,Spielberg,Austria,62
+10,Hockenheimring,Hockenheim,Germany,59
+39,Circuit Park Zandvoort,Zandvoort,Netherlands,52
+11,Hungaroring,Budapest,Hungary,51
+22,Suzuka Circuit,Suzuka,Japan,48
+4,Circuit de Barcelona-Catalunya,Montmeló,Spain,44
+43,Long Beach,California,USA,41
+25,Autódromo Juan y Oscar Gálvez,Buenos Aires,Argentina,39
+40,Zolder,Heusden-Zolder,Belgium,39
+30,Kyalami,Midrand,South Africa,36
+21,Autodromo Enzo e Dino Ferrari,Imola,Italy,33
+29,Adelaide Street Circuit,Adelaide,Australia,31
+15,Marina Bay Street Circuit,Marina Bay,Singapore,30
+37,Detroit Street Circuit,Detroit,USA,28
+38,Brands Hatch,Kent,UK,27
+46,Watkins Glen,New York State,USA,27
+36,Autódromo Internacional Nelson Piquet,Rio de Janeiro,Brazil,22
+27,Autódromo do Estoril,Estoril,Portugal,20
+48,Mosport International Raceway,Ontario,Canada,19
+8,Circuit de Nevers Magny-Cours,Magny Cours,France,18
+32,Autódromo Hermanos Rodríguez,Mexico City,Mexico,18
+17,Shanghai International Circuit,Shanghai,China,16
+45,Jarama,Madrid,Spain,16
+2,Sepang International Circuit,Kuala Lumpur,Malaysia,15
+34,Circuit Paul Ricard,Le Castellet,France,15
+71,Sochi Autodrom,Sochi,Russia,14
+3,Bahrain International Circuit,Sakhir,Bahrain,13
+35,Korean International Circuit,Yeongam County,Korea,13
+16,Fuji Speedway,Oyama,Japan,12
+73,Baku City Circuit,Baku,Azerbaijan,12
+41,Dijon-Prenois,Dijon,France,11
+24,Yas Marina Circuit,Abu Dhabi,UAE,11
+26,Circuito de Jerez,Jerez de la Frontera,Spain,10
+49,Montjuïc,Barcelona,Spain,10
+47,Scandinavian Raceway,Anderstorp,Sweden,8
+69,Circuit of the Americas,Austin,USA,8
+12,Valencia Street Circuit,Valencia,Spain,7
+53,Rouen-Les-Essarts,Rouen,France,7
+55,Reims-Gueux,Reims,France,7
+66,Circuit Bremgarten,Bern,Switzerland,7
+76,Autodromo Internazionale del Mugello,Mugello,Italy,6
+5,Istanbul Park,Istanbul,Turkey,5
+28,Okayama International Circuit,Okayama,Japan,5
+33,Phoenix street circuit,Phoenix,USA,5
+50,Nivelles-Baulers,Brussels,Belgium,5
+64,Ain Diab,Casablanca,Morocco,5
+68,Buddh International Circuit,Uttar Pradesh,India,5
+77,Jeddah Corniche Circuit,Jeddah,Saudi Arabia,5
+58,Aintree,Liverpool,UK,4
+31,Donington Park,Castle Donington,UK,3
+44,Las Vegas Street Circuit,Nevada,USA,3
+51,Charade Circuit,Clermont-Ferrand,France,3
+67,Circuit de Pedralbes,Barcelona,Spain,3
+52,Circuit Mont-Tremblant,Quebec,Canada,2
+57,Zeltweg,Styria,Austria,2
+59,Circuito da Boavista,Oporto,Portugal,2
+62,Monsanto Park Circuit,Lisbon,Portugal,2
+65,Pescara Circuit,Pescara,Italy,2
+56,Prince George Circuit,Eastern Cape Province,South Africa,2
+79,Miami International Autodrome,Miami,USA,2
+42,Fair Park,Dallas,USA,1
+60,Riverside International Raceway,California,USA,1
+61,AVUS,Berlin,Germany,1
+63,Sebring International Raceway,Florida,USA,1

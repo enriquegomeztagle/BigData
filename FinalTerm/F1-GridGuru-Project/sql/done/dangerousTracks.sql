@@ -1,11 +1,4 @@
-import pandas as pd
-import sqlalchemy
-
-# Create SQL connection
-conn = sqlalchemy.create_engine('mysql+pymysql://root:root@localhost:3306/GridGuru')
-
-# Define your SQL query
-query = """
+CREATE TABLE dangerous_tracks AS
 SELECT 
     c.circuitId,
     c.name AS circuit_name,
@@ -26,13 +19,3 @@ GROUP BY
     c.circuitId, c.name, c.location, c.country
 ORDER BY 
     total_incidents DESC;
-"""
-
-# Execute the query and load into a DataFrame
-df = pd.read_sql_query(query, conn)
-
-# Save results to CSV
-df.to_csv('dangerous-tracks.csv', index=False)
-
-# Close connection
-conn.dispose()
