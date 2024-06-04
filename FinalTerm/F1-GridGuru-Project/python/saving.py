@@ -7,26 +7,30 @@ conn = sqlalchemy.create_engine('mysql+pymysql://root:root@localhost:3306/GridGu
 # Define your SQL query
 query = """
 SELECT 
-    q.driverId,
-    CONCAT(d.forename, ' ', d.surname) AS driver_name,
-    AVG(res.position - q.position) AS avg_position_change
+    r.circuitId,
+    c.name AS circuit_name,
+    AVG(res.points) AS avg_points
 FROM 
-    qualifying q
+    results res
+JOIN
+    races r ON res.raceId = r.raceId
 JOIN 
-    results res ON q.raceId = res.raceId AND q.driverId = res.driverId
+    circuits c ON r.circuitId = c.circuitId
 JOIN 
-    drivers d ON q.driverId = d.driverId
+    constructors con ON res.constructorId = con.constructorId
+WHERE
+    res.constructorId = 9
 GROUP BY 
-    q.driverId, d.forename, d.surname
+    r.circuitId, c.name, res.constructorId, con.name
 ORDER BY 
-    avg_position_change DESC;
+    avg_points DESC;
 """
 
 # Execute the query and load into a DataFrame
 df = pd.read_sql_query(query, conn)
 
 # Save results to CSV
-df.to_csv('quali-vs-race.csv', index=False)
+df.to_csv('pointsByGP.csv', index=False)
 
 # Close connection
 conn.dispose()
