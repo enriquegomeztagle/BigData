@@ -1,8 +1,0 @@
-\babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Infrastructure / Architecture}{2}{}%
-\contentsline {section}{\numberline {2}Data Analysis with F1 Dataset}{4}{}%
-\contentsline {subsection}{\numberline {2.1}Database Structure Overview}{5}{}%
-\contentsline {section}{\numberline {3}Challenges Encountered}{6}{}%
-\contentsline {subsection}{\numberline {3.1}Infrastructure-Related Challenges}{6}{}%
-\contentsline {paragraph}{Description:}{6}{}%
-\contentsline {section}{\numberline {4}Project Repository}{6}{}%
